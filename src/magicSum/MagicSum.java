@@ -64,7 +64,7 @@ public class MagicSum {
 			return;
 		}
 
-		int arr[] = new int[size];
+		int arr[] = new int[size];   
 		System.out.println("Enter the numbers");
 
 		for (int i = 0; i < size; i++) {
