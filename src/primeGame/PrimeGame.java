@@ -1,4 +1,4 @@
-package Game;
+package primeGame;
 
 import java.util.*;
 
