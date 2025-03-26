@@ -6,7 +6,7 @@ import com.sbcc.utility.SBCCUtility;
 
 public class UserInterface {
 
-	private static Scanner sc = new Scanner(System.in);
+private static Scanner sc = new Scanner(System.in);
 
 //	public static Player createPlayer() {
 //		System.out.println("Enter player Id");
@@ -28,7 +28,7 @@ public class UserInterface {
 
 		System.out.println("Player id:" + p.getPlayerId());
 		System.out.println("Player name:" + p.getPlayerName());
-		System.out.println("Matched played:" + p.getMatchesPlayed());
+		System.out.println("Matches played:" + p.getMatchesPlayed());
 		System.out.println("Total run scored:" + p.getRunScored());
 		System.out.println("Playing zone:" + p.getPlayingZone());
 
@@ -46,6 +46,7 @@ public class UserInterface {
 			choice = Integer.parseInt(sc.nextLine());
 			switch (choice) {
 			case 1:
+				
 				System.out.println("Enter the player details");
 				String playerDetail = sc.nextLine();
 

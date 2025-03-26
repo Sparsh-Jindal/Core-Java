@@ -39,7 +39,9 @@ public class SBCCUtility {
 			}
 
 			p.setRunScored(p.calculateTotalRuns(runScored));
-
+			
+	//	    0       1   2  3  4  5   6   7   8
+//      HXCB1234D:Dhoni:5:20:130:55:102:100:North:Batsman:3:1
 			p.setPlayingZone(playerDetailArray[2 + matchPlayed + 1]);
 
 		}
