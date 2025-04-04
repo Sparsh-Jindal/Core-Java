@@ -47,11 +47,11 @@ public class Car {
 
 		List<String> ls = new ArrayList<String>();
 
-		/*
-		 * for (Map.Entry<String, Integer> entry : carMap.entrySet()) {
-		 * 
-		 * if (entry.getValue() >= count) { ls.add(entry.getKey()); } }
-		 */
+		
+//		  for (Map.Entry<String, Integer> entry : carMap.entrySet()) {
+//		  
+//		  if (entry.getValue() >= count) { ls.add(entry.getKey()); } }
+		 
 
 		carMap.forEach((name, sold) -> {
 			if (sold >= count) {
