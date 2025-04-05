@@ -9,6 +9,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class DB {
+	
+	static String url="";
+	static String userName="";
+	static String password="";
 
 	private static Connection con = null;
 	private static Properties props = new Properties();
@@ -17,10 +21,13 @@ public class DB {
 		try(FileInputStream fis=new FileInputStream("database.properties")){
 			props.load(fis);
 			Class.forName(props.getProperty("DB_DRIVER_CLASS"));
-			con= DriverManager.getConnection("jdbc:mysql://localhost:3306/myDb1","root","Swati143");
+			url=props.getProperty("DB_URL");
+			userName=props.getProperty("DB_USERNAME");
+			password=props.getProperty("DB_PASSWORD");
+			con= DriverManager.getConnection(url,userName,password);
 		}
 		catch(FileNotFoundException e) {
-			System.out.println("File not found");
+			System.out.println("File not found"); 
 		}
 		
 		return con;
