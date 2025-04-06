@@ -95,7 +95,7 @@ public class Main {
 			case 5:
 				ArrayList<Flight> flightTable = fms.viewFullTable();
 				if (flightTable.isEmpty()) {
-					System.out.println("No flights available for the given source and destination");
+					System.out.println("No flights available");
 				} else {
 					for (Flight fd : flightTable) {
 						System.out.println("Flight ID : " + fd.getFlightId());
